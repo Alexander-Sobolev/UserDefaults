@@ -23,7 +23,7 @@ class UserSettings {
             if let name = newValue {
                 print("value: \(name) was added to key \(key)")
                 defaults.setValue(name, forKey: key)
-                       
+                        
             } else {
                 defaults.removeObject(forKey: key)
             }
